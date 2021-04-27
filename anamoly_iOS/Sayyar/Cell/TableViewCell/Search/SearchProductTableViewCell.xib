@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchProductTableViewCell" customModule="Sayyar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e22-5x-tey">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zyy-lG-pHS">
+                                <rect key="frame" x="20" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="fxk-y7-z0W"/>
+                                    <constraint firstAttribute="width" secondItem="Zyy-lG-pHS" secondAttribute="height" multiplier="1:1" id="p27-U9-uM8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UQE-YH-WwA">
+                                <rect key="frame" x="95" y="5" width="175" height="65"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="qYI-gH-RhZ">
+                                <rect key="frame" x="285" y="15" width="20" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="r7a-rP-5yY"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-AB-dkm" userLabel="Seperator">
+                                <rect key="frame" x="15" y="75" width="290" height="1"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="EQB-Q7-Mbu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UQE-YH-WwA" firstAttribute="leading" secondItem="Zyy-lG-pHS" secondAttribute="trailing" constant="15" id="0YX-cl-osr"/>
+                            <constraint firstItem="UQE-YH-WwA" firstAttribute="top" secondItem="e22-5x-tey" secondAttribute="top" constant="5" id="6Mi-2e-Duo"/>
+                            <constraint firstItem="Zyy-lG-pHS" firstAttribute="leading" secondItem="e22-5x-tey" secondAttribute="leading" constant="20" id="6hJ-7Z-B31"/>
+                            <constraint firstAttribute="bottom" secondItem="1uR-AB-dkm" secondAttribute="bottom" id="A4V-GG-kaN"/>
+                            <constraint firstAttribute="trailing" secondItem="qYI-gH-RhZ" secondAttribute="trailing" constant="15" id="CNH-2t-jlF"/>
+                            <constraint firstItem="1uR-AB-dkm" firstAttribute="leading" secondItem="e22-5x-tey" secondAttribute="leading" constant="15" id="JUf-aK-Woq"/>
+                            <constraint firstAttribute="bottom" secondItem="Zyy-lG-pHS" secondAttribute="bottom" constant="8" id="NEX-tj-pB7"/>
+                            <constraint firstItem="qYI-gH-RhZ" firstAttribute="leading" secondItem="UQE-YH-WwA" secondAttribute="trailing" constant="15" id="SIU-Bh-oIb"/>
+                            <constraint firstItem="Zyy-lG-pHS" firstAttribute="top" secondItem="e22-5x-tey" secondAttribute="top" constant="8" id="Zb9-sw-3kR"/>
+                            <constraint firstAttribute="bottom" secondItem="qYI-gH-RhZ" secondAttribute="bottom" constant="15" id="akh-Gf-ko5"/>
+                            <constraint firstAttribute="trailing" secondItem="1uR-AB-dkm" secondAttribute="trailing" constant="15" id="iTX-x6-6WO"/>
+                            <constraint firstItem="1uR-AB-dkm" firstAttribute="top" secondItem="UQE-YH-WwA" secondAttribute="bottom" constant="5" id="iZN-sL-Okc"/>
+                            <constraint firstItem="qYI-gH-RhZ" firstAttribute="top" secondItem="e22-5x-tey" secondAttribute="top" constant="15" id="q7z-nA-Rae"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e22-5x-tey" secondAttribute="bottom" id="JIB-Y0-gS3"/>
+                    <constraint firstItem="e22-5x-tey" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MdY-T8-bYs"/>
+                    <constraint firstAttribute="trailing" secondItem="e22-5x-tey" secondAttribute="trailing" id="Tvm-Wd-1Zg"/>
+                    <constraint firstItem="e22-5x-tey" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ejh-Nb-1KV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoryImageView" destination="Zyy-lG-pHS" id="fyX-Xj-wBI"/>
+                <outlet property="categoryNameLabel" destination="UQE-YH-WwA" id="Vzu-Mn-ExQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="20" height="20"/>
+    </resources>
+</document>

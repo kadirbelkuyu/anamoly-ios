@@ -1,0 +1,48 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Sayyar' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Sayyar
+  
+  # Network
+  pod 'Alamofire', '~> 4.9.0'
+  
+  #Firebase
+  pod 'Firebase/Database'
+  
+  #Google
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  
+  # Keyboard Management
+  pod 'IQKeyboardManagerSwift'
+  
+  #Text View
+  pod 'KMPlaceholderTextView'
+  
+  #One Signal
+  pod 'OneSignal', '>= 2.11.2', '< 3.0'
+  
+  # Image
+  pod 'SDWebImage'
+  
+  #Loading
+  pod 'SSSpinnerButton'
+  
+  # JSON
+  pod 'SwiftyJSON'
+  
+  #Swift Messages
+  pod 'SwiftMessages'
+
+  # Activity Indicator
+  pod 'SVProgressHUD'
+
+end
+
+#target 'OneSignalNotificationServiceExtension' do
+#  pod 'OneSignal', '>= 2.11.2', '< 3.0'
+#end

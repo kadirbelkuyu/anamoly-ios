@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyOrderTableViewCell" rowHeight="76" id="KGk-i7-Jjw" customClass="MyOrderTableViewCell" customModule="Sayyar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URf-Vw-vsW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="72.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="OTu-EG-sB0">
+                                <rect key="frame" x="280" y="26.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Hi4-5y-6iR"/>
+                                    <constraint firstAttribute="width" constant="20" id="VsX-35-3yC"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpS-gn-gmo" userLabel="Seperator">
+                                <rect key="frame" x="20" y="71.5" width="280" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="W7m-T8-nCO"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="249" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Pending" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccy-LH-rHR">
+                                <rect key="frame" x="216" y="10" width="59" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJO-mo-eBA">
+                                <rect key="frame" x="20" y="10" width="186" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xPD-KN-InY">
+                                <rect key="frame" x="20" y="42.5" width="39.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                <color key="textColor" name="App Orange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="a04-Cg-Non">
+                                <rect key="frame" x="84.5" y="42.5" width="39.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                <color key="textColor" name="App Orange"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DpS-gn-gmo" secondAttribute="bottom" id="1nd-Vy-YvK"/>
+                            <constraint firstItem="Ccy-LH-rHR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a04-Cg-Non" secondAttribute="trailing" constant="10" id="CUr-Xb-D3Q"/>
+                            <constraint firstAttribute="trailing" secondItem="OTu-EG-sB0" secondAttribute="trailing" constant="20" id="Fse-QK-gPb"/>
+                            <constraint firstItem="DpS-gn-gmo" firstAttribute="top" secondItem="a04-Cg-Non" secondAttribute="bottom" constant="10" id="IaB-z2-tco"/>
+                            <constraint firstItem="Ccy-LH-rHR" firstAttribute="top" secondItem="URf-Vw-vsW" secondAttribute="top" constant="10" id="NQl-Q8-Vml"/>
+                            <constraint firstItem="xPD-KN-InY" firstAttribute="leading" secondItem="URf-Vw-vsW" secondAttribute="leading" constant="20" id="Nib-W4-0oH"/>
+                            <constraint firstItem="DpS-gn-gmo" firstAttribute="top" secondItem="xPD-KN-InY" secondAttribute="bottom" constant="10" id="QyU-PF-Y26"/>
+                            <constraint firstItem="OTu-EG-sB0" firstAttribute="leading" secondItem="Ccy-LH-rHR" secondAttribute="trailing" constant="5" id="XSm-fY-FV8"/>
+                            <constraint firstItem="xPD-KN-InY" firstAttribute="top" secondItem="NJO-mo-eBA" secondAttribute="bottom" constant="10" id="YmW-1C-MXx"/>
+                            <constraint firstItem="a04-Cg-Non" firstAttribute="top" secondItem="NJO-mo-eBA" secondAttribute="bottom" constant="10" id="cGY-1d-TCA"/>
+                            <constraint firstItem="OTu-EG-sB0" firstAttribute="centerY" secondItem="URf-Vw-vsW" secondAttribute="centerY" id="cor-y8-tyV"/>
+                            <constraint firstItem="Ccy-LH-rHR" firstAttribute="leading" secondItem="NJO-mo-eBA" secondAttribute="trailing" constant="10" id="gty-gy-4pm"/>
+                            <constraint firstItem="DpS-gn-gmo" firstAttribute="top" secondItem="Ccy-LH-rHR" secondAttribute="bottom" constant="10" id="idq-7V-nCN"/>
+                            <constraint firstItem="DpS-gn-gmo" firstAttribute="leading" secondItem="URf-Vw-vsW" secondAttribute="leading" constant="20" id="m0Q-3R-moL"/>
+                            <constraint firstAttribute="trailing" secondItem="DpS-gn-gmo" secondAttribute="trailing" constant="20" id="njG-ZX-aN0"/>
+                            <constraint firstItem="NJO-mo-eBA" firstAttribute="top" secondItem="URf-Vw-vsW" secondAttribute="top" constant="10" id="qMZ-SK-BME"/>
+                            <constraint firstItem="a04-Cg-Non" firstAttribute="leading" secondItem="xPD-KN-InY" secondAttribute="trailing" constant="25" id="vlP-9C-8cp"/>
+                            <constraint firstItem="NJO-mo-eBA" firstAttribute="leading" secondItem="URf-Vw-vsW" secondAttribute="leading" constant="20" id="wFd-mK-lAh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="URf-Vw-vsW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AcY-T0-FXT"/>
+                    <constraint firstAttribute="trailing" secondItem="URf-Vw-vsW" secondAttribute="trailing" id="qrL-07-AGS"/>
+                    <constraint firstAttribute="bottom" secondItem="URf-Vw-vsW" secondAttribute="bottom" id="uSY-52-eOe"/>
+                    <constraint firstItem="URf-Vw-vsW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="v27-Hp-hZr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="orderAmountLabel" destination="xPD-KN-InY" id="DBJ-9w-9Jh"/>
+                <outlet property="orderQTYLabel" destination="a04-Cg-Non" id="TC7-DJ-S4O"/>
+                <outlet property="orderStatusLabel" destination="Ccy-LH-rHR" id="QVp-He-DRU"/>
+                <outlet property="orderTitleLabel" destination="NJO-mo-eBA" id="n0S-8K-wiV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="20" height="20"/>
+        <namedColor name="App Orange">
+            <color red="0.88235294117647056" green="0.34509803921568627" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

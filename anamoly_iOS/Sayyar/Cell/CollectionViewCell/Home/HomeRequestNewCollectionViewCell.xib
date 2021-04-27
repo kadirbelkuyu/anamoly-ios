@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeRequestNewCollectionViewCell" id="gTV-IL-0wX" customClass="HomeRequestNewCollectionViewCell" customModule="Seyyar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLm-oY-32X">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="192"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="productPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-ir-3JV">
+                                <rect key="frame" x="10" y="10" width="175" height="109.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Missing Any Product?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hCW-QL-2sP" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="10" y="124.5" width="175" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jE4-UV-WCO" customClass="LocalizableButton" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="10" y="147" width="175" height="35"/>
+                                <color key="backgroundColor" name="App Orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="FtG-wi-XzE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Request New"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jE4-UV-WCO" firstAttribute="leading" secondItem="gLm-oY-32X" secondAttribute="leading" constant="10" id="CTF-WF-hZU"/>
+                            <constraint firstAttribute="trailing" secondItem="jE4-UV-WCO" secondAttribute="trailing" constant="10" id="VRN-oa-t0m"/>
+                            <constraint firstItem="hCW-QL-2sP" firstAttribute="leading" secondItem="gLm-oY-32X" secondAttribute="leading" constant="10" id="XxT-Tu-Pu2"/>
+                            <constraint firstItem="jE4-UV-WCO" firstAttribute="top" secondItem="hCW-QL-2sP" secondAttribute="bottom" constant="5" id="iAh-ka-AnB"/>
+                            <constraint firstAttribute="bottom" secondItem="jE4-UV-WCO" secondAttribute="bottom" constant="10" id="mZy-03-hEL"/>
+                            <constraint firstItem="hCW-QL-2sP" firstAttribute="top" secondItem="Yyd-ir-3JV" secondAttribute="bottom" constant="5" id="meL-9r-lcv"/>
+                            <constraint firstAttribute="trailing" secondItem="Yyd-ir-3JV" secondAttribute="trailing" constant="10" id="tJa-LI-GOd"/>
+                            <constraint firstItem="Yyd-ir-3JV" firstAttribute="leading" secondItem="gLm-oY-32X" secondAttribute="leading" constant="10" id="tdB-ev-H1O"/>
+                            <constraint firstItem="Yyd-ir-3JV" firstAttribute="top" secondItem="gLm-oY-32X" secondAttribute="top" constant="10" id="vzX-oK-T6v"/>
+                            <constraint firstAttribute="trailing" secondItem="hCW-QL-2sP" secondAttribute="trailing" constant="10" id="xjy-WG-qma"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gLm-oY-32X" secondAttribute="trailing" id="4wI-NN-EyU"/>
+                <constraint firstAttribute="bottom" secondItem="gLm-oY-32X" secondAttribute="bottom" id="PHB-vK-k2t"/>
+                <constraint firstItem="gLm-oY-32X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QIM-Lj-zP5"/>
+                <constraint firstItem="gLm-oY-32X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="W7l-cE-Hox"/>
+            </constraints>
+            <size key="customSize" width="423" height="389"/>
+            <connections>
+                <outlet property="missingProductLabel" destination="hCW-QL-2sP" id="KVa-8n-Atm"/>
+                <outlet property="requestNewButton" destination="jE4-UV-WCO" id="VMa-B6-cBW"/>
+            </connections>
+            <point key="canvasLocation" x="407.97101449275368" y="265.84821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="productPlaceholder" width="97.5" height="107"/>
+        <namedColor name="App Orange">
+            <color red="0.80000000000000004" green="0.5607843137254902" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

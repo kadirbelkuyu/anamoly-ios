@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchTextTableViewCell" id="KGk-i7-Jjw" customClass="SearchTextTableViewCell" customModule="Sayyar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-Dl-FOj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uug-o5-6cf">
+                                <rect key="frame" x="20" y="5" width="344" height="34"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="oPA-aX-0bZ">
+                                <rect key="frame" x="374" y="10" width="20" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="cai-eR-oX2"/>
+                                    <constraint firstAttribute="height" constant="24" id="l50-2e-IDi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oPA-aX-0bZ" firstAttribute="top" secondItem="IRa-Dl-FOj" secondAttribute="top" constant="10" id="Ccp-JA-a8t"/>
+                            <constraint firstAttribute="trailing" secondItem="oPA-aX-0bZ" secondAttribute="trailing" constant="20" id="Iqk-OK-fLJ"/>
+                            <constraint firstItem="uug-o5-6cf" firstAttribute="top" secondItem="IRa-Dl-FOj" secondAttribute="top" constant="5" id="UM0-rc-RVv"/>
+                            <constraint firstItem="uug-o5-6cf" firstAttribute="leading" secondItem="IRa-Dl-FOj" secondAttribute="leading" constant="20" id="Vrr-mh-O5T"/>
+                            <constraint firstAttribute="bottom" secondItem="oPA-aX-0bZ" secondAttribute="bottom" constant="10" id="rx7-4S-k7a"/>
+                            <constraint firstAttribute="bottom" secondItem="uug-o5-6cf" secondAttribute="bottom" constant="5" id="sc5-Lv-eKr"/>
+                            <constraint firstItem="oPA-aX-0bZ" firstAttribute="leading" secondItem="uug-o5-6cf" secondAttribute="trailing" constant="10" id="wEE-Rt-f48"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IRa-Dl-FOj" secondAttribute="trailing" id="8fP-oa-P0h"/>
+                    <constraint firstItem="IRa-Dl-FOj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VUp-og-HTs"/>
+                    <constraint firstItem="IRa-Dl-FOj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kmY-6C-y4q"/>
+                    <constraint firstAttribute="bottom" secondItem="IRa-Dl-FOj" secondAttribute="bottom" id="lXK-CT-suZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="searchTextLabel" destination="uug-o5-6cf" id="Gzh-g6-KGg"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="153"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderCollectionViewCell" id="gTV-IL-0wX" customClass="SliderCollectionViewCell" customModule="Imperfecto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cDs-Wp-ood">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    </imageView>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="EeF-Sy-fG6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </scrollView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AQd-v8-nXi">
+                        <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cDs-Wp-ood" secondAttribute="bottom" id="6Mn-Zo-uKL"/>
+                <constraint firstItem="AQd-v8-nXi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="6cF-CW-LzR"/>
+                <constraint firstItem="EeF-Sy-fG6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8sb-aQ-VbC"/>
+                <constraint firstAttribute="trailing" secondItem="EeF-Sy-fG6" secondAttribute="trailing" id="Bod-7K-i28"/>
+                <constraint firstItem="AQd-v8-nXi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Crc-ou-kMy"/>
+                <constraint firstAttribute="trailing" secondItem="cDs-Wp-ood" secondAttribute="trailing" id="Igt-ET-cQb"/>
+                <constraint firstItem="cDs-Wp-ood" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mec-Di-tJ4"/>
+                <constraint firstItem="cDs-Wp-ood" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PCo-43-VEQ"/>
+                <constraint firstAttribute="bottom" secondItem="EeF-Sy-fG6" secondAttribute="bottom" id="chl-Ox-WgX"/>
+                <constraint firstItem="EeF-Sy-fG6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fCF-6g-5uD"/>
+            </constraints>
+            <size key="customSize" width="477" height="539"/>
+            <connections>
+                <outlet property="activity" destination="AQd-v8-nXi" id="Gfy-v9-Mh2"/>
+                <outlet property="containerScrollView" destination="EeF-Sy-fG6" id="35I-G9-rFs"/>
+                <outlet property="imgStatic" destination="cDs-Wp-ood" id="Dfq-Hi-bBR"/>
+            </connections>
+            <point key="canvasLocation" x="-278" y="-398"/>
+        </collectionViewCell>
+    </objects>
+</document>

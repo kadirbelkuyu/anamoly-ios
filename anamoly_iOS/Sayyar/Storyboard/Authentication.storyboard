@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rnm-p4-lq8">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-ExtraBold.ttf">
+            <string>Tajawal-ExtraBold</string>
+        </array>
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login Desk View Controller-->
+        <scene sceneID="0Ls-JX-ZkD">
+            <objects>
+                <viewController storyboardIdentifier="LoginDeskViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DuQ-8m-Zns" customClass="LoginDeskViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4AV-ND-fmq">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWo-9i-kr2">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-Td-Cfj">
+                                <rect key="frame" x="20" y="320.66666666666669" width="388" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrowBlue" translatesAutoresizingMaskIntoConstraints="NO" id="6To-qk-Fiu">
+                                        <rect key="frame" x="347" y="10" width="31" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.9882352941176471" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6To-qk-Fiu" secondAttribute="height" multiplier="1:1" constant="1" id="KAA-a4-EwJ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqB-IV-7f6">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="50"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="3" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" name="App Purple"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapOnButtonSelectLanguageNew:" destination="DuQ-8m-Zns" eventType="touchUpInside" id="rb0-qs-IgN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundPurple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="52y-GP-xWu"/>
+                                    <constraint firstItem="RqB-IV-7f6" firstAttribute="top" secondItem="HY2-Td-Cfj" secondAttribute="top" id="MnA-TC-BW3"/>
+                                    <constraint firstItem="6To-qk-Fiu" firstAttribute="top" secondItem="HY2-Td-Cfj" secondAttribute="top" constant="10" id="OXJ-AS-th7"/>
+                                    <constraint firstAttribute="bottom" secondItem="RqB-IV-7f6" secondAttribute="bottom" id="S2O-Vx-zfb"/>
+                                    <constraint firstAttribute="bottom" secondItem="6To-qk-Fiu" secondAttribute="bottom" constant="10" id="eIQ-Mb-0KG"/>
+                                    <constraint firstAttribute="trailing" secondItem="6To-qk-Fiu" secondAttribute="trailing" constant="10" id="kB3-p6-R4W"/>
+                                    <constraint firstAttribute="trailing" secondItem="RqB-IV-7f6" secondAttribute="trailing" id="nb9-i2-mzf"/>
+                                    <constraint firstItem="RqB-IV-7f6" firstAttribute="leading" secondItem="HY2-Td-Cfj" secondAttribute="leading" id="uXG-4W-DJ0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BackgroundPurple"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-1N-x2q">
+                                <rect key="frame" x="20" y="400.66666666666669" width="388" height="135.00000000000006"/>
+                                <subviews>
+                                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRl-TM-zJZ">
+                                        <rect key="frame" x="0.0" y="-50" width="388" height="50"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHZ-7y-uuC">
+                                                <rect key="frame" x="0.0" y="1" width="193.66666666666666" height="48"/>
+                                                <color key="backgroundColor" name="App Purple"/>
+                                            </view>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbN-zX-Qkv" customClass="LocalizableButton" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="193.66666666666666" height="50"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Dutch">
+                                                    <color key="titleColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapOnButtonSelectLanguage:" destination="DuQ-8m-Zns" eventType="touchUpInside" id="dXm-0c-JBQ"/>
+                                                </connections>
+                                            </button>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kq-Ou-iQz" userLabel="Seperator">
+                                                <rect key="frame" x="193.66666666666666" y="0.0" width="1" height="50"/>
+                                                <color key="backgroundColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="MUg-Mc-gWa"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3Q-tT-uZt" customClass="LocalizableButtonTwo" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="194.66666666666663" y="0.0" width="193.33333333333337" height="50"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="English">
+                                                    <color key="titleColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapOnButtonSelectLanguage:" destination="DuQ-8m-Zns" eventType="touchUpInside" id="ZHP-pD-GY8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="CHZ-7y-uuC" firstAttribute="top" secondItem="nRl-TM-zJZ" secondAttribute="top" constant="1" id="Bqg-CE-9l3"/>
+                                            <constraint firstItem="SbN-zX-Qkv" firstAttribute="top" secondItem="nRl-TM-zJZ" secondAttribute="top" id="I3N-wB-8ma"/>
+                                            <constraint firstItem="e3Q-tT-uZt" firstAttribute="width" secondItem="SbN-zX-Qkv" secondAttribute="width" id="KZK-iF-kSg"/>
+                                            <constraint firstItem="SbN-zX-Qkv" firstAttribute="centerX" secondItem="CHZ-7y-uuC" secondAttribute="centerX" id="Wb6-3e-I9G"/>
+                                            <constraint firstItem="SbN-zX-Qkv" firstAttribute="leading" secondItem="nRl-TM-zJZ" secondAttribute="leading" id="Zdp-Nl-3w9"/>
+                                            <constraint firstItem="e3Q-tT-uZt" firstAttribute="leading" secondItem="SbN-zX-Qkv" secondAttribute="trailing" constant="1" id="bNg-Su-A7M"/>
+                                            <constraint firstAttribute="height" constant="50" id="elW-FO-Nzg"/>
+                                            <constraint firstItem="CHZ-7y-uuC" firstAttribute="width" secondItem="SbN-zX-Qkv" secondAttribute="width" id="fyH-gW-lto"/>
+                                            <constraint firstAttribute="bottom" secondItem="SbN-zX-Qkv" secondAttribute="bottom" id="iPv-sE-nFG"/>
+                                            <constraint firstItem="e3Q-tT-uZt" firstAttribute="top" secondItem="nRl-TM-zJZ" secondAttribute="top" id="k6D-fR-eX1"/>
+                                            <constraint firstAttribute="bottom" secondItem="e3Q-tT-uZt" secondAttribute="bottom" id="miL-bN-1HO"/>
+                                            <constraint firstAttribute="bottom" secondItem="CHZ-7y-uuC" secondAttribute="bottom" constant="1" id="otd-an-EvI"/>
+                                            <constraint firstAttribute="trailing" secondItem="e3Q-tT-uZt" secondAttribute="trailing" id="ozn-pV-dF2"/>
+                                            <constraint firstItem="7kq-Ou-iQz" firstAttribute="top" secondItem="nRl-TM-zJZ" secondAttribute="top" id="pT2-FS-muP"/>
+                                            <constraint firstItem="e3Q-tT-uZt" firstAttribute="leading" secondItem="7kq-Ou-iQz" secondAttribute="trailing" id="rxr-vd-8tm"/>
+                                            <constraint firstAttribute="bottom" secondItem="7kq-Ou-iQz" secondAttribute="bottom" id="sfN-Td-uru"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbT-qN-bYf" customClass="LocalizableButton" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6Zu-ls-Fs8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-ExtraBold" family="Tajawal" pointSize="20"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Existing User">
+                                            <color key="titleColor" name="App Purple"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapOnButtonExistingCustomer:" destination="DuQ-8m-Zns" eventType="touchUpInside" id="YbH-S1-Lza"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1d-BM-VbJ" customClass="LocalizableButtonTwo" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75" width="388" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="i3t-TT-DhU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-ExtraBold" family="Tajawal" pointSize="20"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="New User">
+                                            <color key="titleColor" name="App Orange"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="App Orange"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapOnButtonNewCustomer:" destination="DuQ-8m-Zns" eventType="touchUpInside" id="8Da-kX-WXs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Roy-ST-fcN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QtJ-1N-x2q" firstAttribute="leading" secondItem="Roy-ST-fcN" secondAttribute="leading" constant="20" id="9q2-Iu-lbx"/>
+                            <constraint firstItem="TWo-9i-kr2" firstAttribute="leading" secondItem="Roy-ST-fcN" secondAttribute="leading" id="EvQ-iv-lol"/>
+                            <constraint firstItem="QtJ-1N-x2q" firstAttribute="centerY" secondItem="Roy-ST-fcN" secondAttribute="centerY" id="GqQ-xq-1Sw"/>
+                            <constraint firstItem="Roy-ST-fcN" firstAttribute="trailing" secondItem="HY2-Td-Cfj" secondAttribute="trailing" constant="20" id="HCv-BK-IUe"/>
+                            <constraint firstItem="HY2-Td-Cfj" firstAttribute="leading" secondItem="Roy-ST-fcN" secondAttribute="leading" constant="20" id="b2p-T5-bBy"/>
+                            <constraint firstItem="TWo-9i-kr2" firstAttribute="top" secondItem="4AV-ND-fmq" secondAttribute="top" id="kec-O6-fRB"/>
+                            <constraint firstItem="QtJ-1N-x2q" firstAttribute="top" secondItem="HY2-Td-Cfj" secondAttribute="bottom" constant="30" id="kgF-Ai-B5g"/>
+                            <constraint firstAttribute="trailing" secondItem="TWo-9i-kr2" secondAttribute="trailing" id="m8A-FU-7lN"/>
+                            <constraint firstAttribute="bottom" secondItem="TWo-9i-kr2" secondAttribute="bottom" id="tTQ-UV-Eit"/>
+                            <constraint firstItem="Roy-ST-fcN" firstAttribute="trailing" secondItem="QtJ-1N-x2q" secondAttribute="trailing" constant="20" id="taC-yA-qyv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cac-CB-3d6"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="TWo-9i-kr2" id="K5o-7h-Td0"/>
+                        <outlet property="dutchLanguageButton" destination="SbN-zX-Qkv" id="fgh-e1-ruo"/>
+                        <outlet property="englishLanguageButton" destination="e3Q-tT-uZt" id="CL7-T7-pQM"/>
+                        <outlet property="existingCustomerButton" destination="cbT-qN-bYf" id="4kR-4N-kQd"/>
+                        <outlet property="languageButton" destination="RqB-IV-7f6" id="Jkl-uK-w7X"/>
+                        <outlet property="newCustomerButton" destination="i1d-BM-VbJ" id="BI7-Tf-3RZ"/>
+                        <outlet property="selectedSegmentBackgroundView" destination="CHZ-7y-uuC" id="cay-RW-YLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ken-xv-pRS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="156.65024630541873"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="wGA-TH-4qs">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f0u-xB-dMJ" customClass="LoginViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qx7-oB-ZQx">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYD-yb-9Wa">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-DK-O2j">
+                                <rect key="frame" x="10" y="44" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YEE-0r-WBi"/>
+                                    <constraint firstAttribute="width" constant="60" id="rSH-k4-MGQ"/>
+                                </constraints>
+                                <state key="normal" image="backArrow"/>
+                                <connections>
+                                    <action selector="didTapOnButtonback:" destination="f0u-xB-dMJ" eventType="touchUpInside" id="Nwx-7a-ZiO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Xue-MS-7JS" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="338" width="388" height="50"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ffY-rI-PoH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="f0u-xB-dMJ" id="KJe-NG-yQu"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wjD-i5-mAt" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="403" width="388" height="50"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TWE-89-qMe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="RightPadding">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="32"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="f0u-xB-dMJ" id="uxR-7H-vNH"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02S-oo-iMD" customClass="SpinnerButton" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="473" width="388" height="60"/>
+                                <color key="backgroundColor" name="App Purple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Gl3-kw-ZFB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapOnButtonLogin:" destination="f0u-xB-dMJ" eventType="touchUpInside" id="quh-cU-1Y9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umk-23-Hr3" customClass="LocalizableButton" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="533" width="428" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lRI-nF-wWx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="20" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="32" maxY="0.0"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.87743109460000002" green="0.27597203850000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnButtonForgotPassword:" destination="f0u-xB-dMJ" eventType="touchUpInside" id="ON0-cS-PEH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crn-az-RhV">
+                                <rect key="frame" x="20" y="294" width="388" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HoN-XP-bUz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HoN-XP-bUz" firstAttribute="trailing" secondItem="Xue-MS-7JS" secondAttribute="trailing" constant="20" id="0YP-cV-SFh"/>
+                            <constraint firstItem="KNH-DK-O2j" firstAttribute="top" secondItem="HoN-XP-bUz" secondAttribute="top" id="20b-lH-TSg"/>
+                            <constraint firstItem="02S-oo-iMD" firstAttribute="leading" secondItem="HoN-XP-bUz" secondAttribute="leading" constant="20" id="De6-Dp-F4L"/>
+                            <constraint firstItem="Xue-MS-7JS" firstAttribute="top" secondItem="Crn-az-RhV" secondAttribute="bottom" constant="20" id="FhX-tK-I8F"/>
+                            <constraint firstItem="HoN-XP-bUz" firstAttribute="trailing" secondItem="Crn-az-RhV" secondAttribute="trailing" constant="20" id="IqC-7p-3as"/>
+                            <constraint firstAttribute="bottom" secondItem="tYD-yb-9Wa" secondAttribute="bottom" id="KSh-ed-5ci"/>
+                            <constraint firstItem="wjD-i5-mAt" firstAttribute="leading" secondItem="HoN-XP-bUz" secondAttribute="leading" constant="20" id="LSA-GN-aJR"/>
+                            <constraint firstAttribute="trailing" secondItem="umk-23-Hr3" secondAttribute="trailing" id="P9C-ja-g8e"/>
+                            <constraint firstItem="umk-23-Hr3" firstAttribute="top" secondItem="02S-oo-iMD" secondAttribute="bottom" id="RLs-tl-tE3"/>
+                            <constraint firstItem="Crn-az-RhV" firstAttribute="leading" secondItem="HoN-XP-bUz" secondAttribute="leading" constant="20" id="TcA-z5-Rju"/>
+                            <constraint firstItem="tYD-yb-9Wa" firstAttribute="leading" secondItem="Qx7-oB-ZQx" secondAttribute="leading" id="Uxu-4Y-K2g"/>
+                            <constraint firstItem="HoN-XP-bUz" firstAttribute="trailing" secondItem="02S-oo-iMD" secondAttribute="trailing" constant="20" id="YaR-K3-Wih"/>
+                            <constraint firstItem="wjD-i5-mAt" firstAttribute="top" secondItem="Xue-MS-7JS" secondAttribute="bottom" constant="15" id="b8E-x5-1rI"/>
+                            <constraint firstAttribute="trailing" secondItem="tYD-yb-9Wa" secondAttribute="trailing" id="bDm-yG-pem"/>
+                            <constraint firstItem="umk-23-Hr3" firstAttribute="leading" secondItem="HoN-XP-bUz" secondAttribute="leading" id="e29-kC-JKn"/>
+                            <constraint firstItem="Crn-az-RhV" firstAttribute="top" secondItem="KNH-DK-O2j" secondAttribute="bottom" constant="200" id="eQr-hE-9HS"/>
+                            <constraint firstItem="Xue-MS-7JS" firstAttribute="leading" secondItem="HoN-XP-bUz" secondAttribute="leading" constant="20" id="enD-bU-NGr"/>
+                            <constraint firstItem="02S-oo-iMD" firstAttribute="top" secondItem="wjD-i5-mAt" secondAttribute="bottom" constant="20" id="ncP-0h-D3F"/>
+                            <constraint firstItem="HoN-XP-bUz" firstAttribute="trailing" secondItem="wjD-i5-mAt" secondAttribute="trailing" constant="20" id="puj-Hk-sgE"/>
+                            <constraint firstItem="tYD-yb-9Wa" firstAttribute="top" secondItem="Qx7-oB-ZQx" secondAttribute="top" id="r05-ja-YBV"/>
+                            <constraint firstItem="KNH-DK-O2j" firstAttribute="leading" secondItem="HoN-XP-bUz" secondAttribute="leading" constant="10" id="zCs-lk-x78"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="tYD-yb-9Wa" id="fRf-Xd-SZT"/>
+                        <outlet property="emailAddresstextField" destination="Xue-MS-7JS" id="nFu-51-mSL"/>
+                        <outlet property="enterPasswordTextField" destination="wjD-i5-mAt" id="NRH-mL-qcl"/>
+                        <outlet property="forgotPasswordButton" destination="umk-23-Hr3" id="2Ry-hE-pVr"/>
+                        <outlet property="loginButton" destination="02S-oo-iMD" id="vHz-jX-6oU"/>
+                        <outlet property="titleDescriptionLabel" destination="Crn-az-RhV" id="bkP-qt-fte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2X-id-mfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018" y="156"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="7Sx-r6-U4s">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9N6-Ag-Hcn" customClass="RegisterViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ajQ-T5-hpV">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hki-6w-UzN">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-FE-h3n">
+                                <rect key="frame" x="10" y="44" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F2O-WR-VOt"/>
+                                    <constraint firstAttribute="width" constant="60" id="MoL-ev-AS8"/>
+                                </constraints>
+                                <state key="normal" image="backArrow"/>
+                                <connections>
+                                    <action selector="didTapOnButtonback:" destination="9N6-Ag-Hcn" eventType="touchUpInside" id="LT3-v0-fdL"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-Xn-7d6">
+                                <rect key="frame" x="0.0" y="294" width="428" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OV-Y1-n1W">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="685"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="j6Q-ZQ-lL0" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="15" width="388" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="7Cf-xy-hVq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="75"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="g04-XW-f7b"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-xC-KA0" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="80" width="388" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="n2N-m1-Tmr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="RightPadding">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="B1W-Ir-4pb"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMd-TP-1N3">
+                                                <rect key="frame" x="358" y="80" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cMd-TP-1N3" secondAttribute="height" multiplier="1:1" id="3zf-FO-pDD"/>
+                                                </constraints>
+                                                <state key="normal" image="eyeClose"/>
+                                                <state key="selected" image="eyeOpen"/>
+                                                <connections>
+                                                    <action selector="didTapOnButtonShowPassword:" destination="9N6-Ag-Hcn" eventType="touchUpInside" id="vJB-Rs-hgt"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jWR-LF-AOT" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="145" width="388" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="qsg-Eh-bAy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="EF5-Yr-uNz"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="60F-Bn-9k9" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="210" width="186.66666666666666" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="zsU-9l-Hff"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="given-name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="fWE-iG-NdD"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Gf0-7F-VQw" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="221.66666666666663" y="210" width="186.33333333333337" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="5rW-3A-D6x"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="family-name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="kpe-xP-Ega"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Postal Code" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CJ6-Hx-Etl" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="275" width="140" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Yve-98-zzy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="postal-code"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="Wdg-sD-koA"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="House No" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="txp-Gp-j9P" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="172" y="275" width="112" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gRe-vx-5NP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="4Id-dm-txH"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="House Number Addition" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UPI-aQ-skr" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="296" y="275" width="112" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="1rG-Ur-GM9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="9N6-Ag-Hcn" id="Bf0-s6-FSY"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-3q-zZF" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="340" width="428" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="glT-7A-GfZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="35" minY="5" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="I am a company" image="checkboxUnselected">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="checkboxSelected"/>
+                                                <connections>
+                                                    <action selector="didTapOnButtonIAmCompany:" destination="9N6-Ag-Hcn" eventType="touchUpInside" id="Zj6-v4-Xl3"/>
+                                                </connections>
+                                            </button>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67b-iv-Nya">
+                                                <rect key="frame" x="0.0" y="415" width="428" height="130"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company Name" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UFp-5R-6YW" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="0.0" width="388" height="50"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="OXz-PS-Ull"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="organization"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                                <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="75"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="LeftPadding">
+                                                                <real key="value" value="40"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="9N6-Ag-Hcn" id="JYo-4c-LNE"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company ID Number" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sHZ-gd-Svc" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="65" width="388" height="50"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="3bk-HH-yZf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="organization-title"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                                                <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                                <integer key="value" value="50"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="LeftPadding">
+                                                                <real key="value" value="40"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="9N6-Ag-Hcn" id="heu-3Y-CTE"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="UFp-5R-6YW" secondAttribute="trailing" constant="20" id="2Yx-mO-dUt"/>
+                                                    <constraint firstItem="UFp-5R-6YW" firstAttribute="top" secondItem="67b-iv-Nya" secondAttribute="top" id="Buq-MJ-3FJ"/>
+                                                    <constraint firstItem="sHZ-gd-Svc" firstAttribute="leading" secondItem="67b-iv-Nya" secondAttribute="leading" constant="20" id="Dhg-Zd-BtI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sHZ-gd-Svc" secondAttribute="bottom" constant="15" id="HK4-bG-6MG"/>
+                                                    <constraint firstItem="UFp-5R-6YW" firstAttribute="leading" secondItem="67b-iv-Nya" secondAttribute="leading" constant="20" id="h6T-Vc-EIV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sHZ-gd-Svc" secondAttribute="trailing" constant="20" id="jjc-QN-I7W"/>
+                                                    <constraint firstItem="sHZ-gd-Svc" firstAttribute="top" secondItem="UFp-5R-6YW" secondAttribute="bottom" constant="15" id="n3e-lA-BhE"/>
+                                                    <constraint firstAttribute="height" constant="130" id="t93-1O-ZDx"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TR6-QN-nAo" customClass="SpinnerButton" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="545" width="388" height="60"/>
+                                                <color key="backgroundColor" name="App Purple"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Ebt-0u-Vi2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapOnButtonRegister:" destination="9N6-Ag-Hcn" eventType="touchUpInside" id="ZrQ-6D-iZj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY9-Ny-bR9" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="605" width="428" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pRN-Nd-HcC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="20"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="20" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="32" maxY="0.0"/>
+                                                <state key="normal" title="Privacy Policy" image="info">
+                                                    <color key="titleColor" red="0.87743109460000002" green="0.27597203850000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapOnButtonPrivacyPolicy:" destination="9N6-Ag-Hcn" eventType="touchUpInside" id="1Ar-MC-50y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="eVr-xC-KA0" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" constant="20" id="1xq-8W-Pjj"/>
+                                            <constraint firstAttribute="bottom" secondItem="wY9-Ny-bR9" secondAttribute="bottom" constant="30" id="2PU-wp-1EE"/>
+                                            <constraint firstItem="jWR-LF-AOT" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" constant="20" id="3nf-hf-mnk"/>
+                                            <constraint firstItem="cMd-TP-1N3" firstAttribute="top" secondItem="eVr-xC-KA0" secondAttribute="top" id="5ti-3A-xBc"/>
+                                            <constraint firstItem="UPI-aQ-skr" firstAttribute="top" secondItem="Gf0-7F-VQw" secondAttribute="bottom" constant="15" id="65G-R2-TAd"/>
+                                            <constraint firstItem="eVr-xC-KA0" firstAttribute="top" secondItem="j6Q-ZQ-lL0" secondAttribute="bottom" constant="15" id="9GF-7n-aeM"/>
+                                            <constraint firstItem="cMd-TP-1N3" firstAttribute="bottom" secondItem="eVr-xC-KA0" secondAttribute="bottom" id="BWb-ud-9tE"/>
+                                            <constraint firstItem="Gf0-7F-VQw" firstAttribute="top" secondItem="jWR-LF-AOT" secondAttribute="bottom" constant="15" id="CEW-Gv-y4p"/>
+                                            <constraint firstItem="67b-iv-Nya" firstAttribute="top" secondItem="WlU-3q-zZF" secondAttribute="bottom" constant="15" id="CwJ-Ji-1GH"/>
+                                            <constraint firstItem="Gf0-7F-VQw" firstAttribute="leading" secondItem="60F-Bn-9k9" secondAttribute="trailing" constant="15" id="Dws-mk-ki0"/>
+                                            <constraint firstAttribute="trailing" secondItem="wY9-Ny-bR9" secondAttribute="trailing" id="FOx-01-ixb"/>
+                                            <constraint firstAttribute="trailing" secondItem="TR6-QN-nAo" secondAttribute="trailing" constant="20" id="FoI-NK-T0n"/>
+                                            <constraint firstItem="UPI-aQ-skr" firstAttribute="leading" secondItem="txp-Gp-j9P" secondAttribute="trailing" constant="12" id="GQH-Hn-5Wi"/>
+                                            <constraint firstItem="WlU-3q-zZF" firstAttribute="top" secondItem="CJ6-Hx-Etl" secondAttribute="bottom" constant="15" id="Ixr-7i-m8s"/>
+                                            <constraint firstItem="j6Q-ZQ-lL0" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" constant="20" id="J3h-ct-I0u"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gf0-7F-VQw" secondAttribute="trailing" constant="20" id="LoL-vj-oWR"/>
+                                            <constraint firstItem="txp-Gp-j9P" firstAttribute="width" secondItem="CJ6-Hx-Etl" secondAttribute="width" multiplier="0.8" id="MO5-wP-3p7"/>
+                                            <constraint firstAttribute="trailing" secondItem="UPI-aQ-skr" secondAttribute="trailing" constant="20" id="Nqe-oH-Be0"/>
+                                            <constraint firstAttribute="trailing" secondItem="WlU-3q-zZF" secondAttribute="trailing" id="R2M-lE-HR9"/>
+                                            <constraint firstItem="60F-Bn-9k9" firstAttribute="top" secondItem="jWR-LF-AOT" secondAttribute="bottom" constant="15" id="SZ2-0H-f1i"/>
+                                            <constraint firstItem="CJ6-Hx-Etl" firstAttribute="top" secondItem="60F-Bn-9k9" secondAttribute="bottom" constant="15" id="Sys-Nj-OfN"/>
+                                            <constraint firstItem="UPI-aQ-skr" firstAttribute="width" secondItem="txp-Gp-j9P" secondAttribute="width" id="T4y-Vk-OZ9"/>
+                                            <constraint firstItem="txp-Gp-j9P" firstAttribute="top" secondItem="Gf0-7F-VQw" secondAttribute="bottom" constant="15" id="U9W-vB-QaZ"/>
+                                            <constraint firstItem="CJ6-Hx-Etl" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" constant="20" id="VgL-pY-Ka5"/>
+                                            <constraint firstItem="wY9-Ny-bR9" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" id="WUI-hu-TsF"/>
+                                            <constraint firstItem="TR6-QN-nAo" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" constant="20" id="Z4f-5N-HqZ"/>
+                                            <constraint firstItem="60F-Bn-9k9" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" constant="20" id="aFg-OD-B5s"/>
+                                            <constraint firstAttribute="trailing" secondItem="jWR-LF-AOT" secondAttribute="trailing" constant="20" id="aXV-5a-Tbl"/>
+                                            <constraint firstItem="WlU-3q-zZF" firstAttribute="top" secondItem="UPI-aQ-skr" secondAttribute="bottom" constant="15" id="bh9-c5-3mn"/>
+                                            <constraint firstItem="WlU-3q-zZF" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" id="bok-6X-bLL"/>
+                                            <constraint firstItem="WlU-3q-zZF" firstAttribute="top" secondItem="txp-Gp-j9P" secondAttribute="bottom" constant="15" id="cR5-O0-7wA"/>
+                                            <constraint firstItem="wY9-Ny-bR9" firstAttribute="top" secondItem="TR6-QN-nAo" secondAttribute="bottom" id="cXh-2e-icB"/>
+                                            <constraint firstAttribute="trailing" secondItem="eVr-xC-KA0" secondAttribute="trailing" constant="20" id="clW-bG-hp1"/>
+                                            <constraint firstItem="cMd-TP-1N3" firstAttribute="trailing" secondItem="eVr-xC-KA0" secondAttribute="trailing" id="fVQ-kt-1rh"/>
+                                            <constraint firstAttribute="trailing" secondItem="67b-iv-Nya" secondAttribute="trailing" id="ius-SY-Ftr"/>
+                                            <constraint firstItem="67b-iv-Nya" firstAttribute="leading" secondItem="1OV-Y1-n1W" secondAttribute="leading" id="lda-SO-am8"/>
+                                            <constraint firstItem="jWR-LF-AOT" firstAttribute="top" secondItem="eVr-xC-KA0" secondAttribute="bottom" constant="15" id="pKq-a8-pIg"/>
+                                            <constraint firstItem="TR6-QN-nAo" firstAttribute="top" secondItem="67b-iv-Nya" secondAttribute="bottom" id="qN8-pJ-upf"/>
+                                            <constraint firstItem="Gf0-7F-VQw" firstAttribute="width" secondItem="60F-Bn-9k9" secondAttribute="width" id="scJ-ys-TXZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="j6Q-ZQ-lL0" secondAttribute="trailing" constant="20" id="tvP-XV-BFM"/>
+                                            <constraint firstItem="txp-Gp-j9P" firstAttribute="leading" secondItem="CJ6-Hx-Etl" secondAttribute="trailing" constant="12" id="wC9-Dd-g9a"/>
+                                            <constraint firstItem="j6Q-ZQ-lL0" firstAttribute="top" secondItem="1OV-Y1-n1W" secondAttribute="top" constant="15" id="xZ4-2T-nzk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1OV-Y1-n1W" firstAttribute="top" secondItem="Xf3-Xn-7d6" secondAttribute="top" id="6Ja-OU-5d9"/>
+                                    <constraint firstItem="1OV-Y1-n1W" firstAttribute="centerX" secondItem="Xf3-Xn-7d6" secondAttribute="centerX" id="FUp-S6-wFe"/>
+                                    <constraint firstItem="1OV-Y1-n1W" firstAttribute="leading" secondItem="Xf3-Xn-7d6" secondAttribute="leading" id="HSa-aF-3uP"/>
+                                    <constraint firstAttribute="trailing" secondItem="1OV-Y1-n1W" secondAttribute="trailing" id="dxQ-2o-Z1r"/>
+                                    <constraint firstAttribute="bottom" secondItem="1OV-Y1-n1W" secondAttribute="bottom" constant="1" id="g2n-UU-Ql1"/>
+                                    <constraint firstItem="1OV-Y1-n1W" firstAttribute="width" secondItem="Xf3-Xn-7d6" secondAttribute="width" id="gic-lr-9Je"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Syd-fj-lIe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xf3-Xn-7d6" firstAttribute="top" secondItem="hnk-FE-h3n" secondAttribute="bottom" constant="200" id="3wz-Pd-GM9"/>
+                            <constraint firstItem="hnk-FE-h3n" firstAttribute="leading" secondItem="Syd-fj-lIe" secondAttribute="leading" constant="10" id="59x-fZ-1VH"/>
+                            <constraint firstAttribute="trailing" secondItem="Hki-6w-UzN" secondAttribute="trailing" id="DnB-lE-OxX"/>
+                            <constraint firstItem="Hki-6w-UzN" firstAttribute="top" secondItem="ajQ-T5-hpV" secondAttribute="top" id="a1W-VV-TJp"/>
+                            <constraint firstAttribute="bottom" secondItem="Hki-6w-UzN" secondAttribute="bottom" id="le5-m3-K9A"/>
+                            <constraint firstItem="Syd-fj-lIe" firstAttribute="bottom" secondItem="Xf3-Xn-7d6" secondAttribute="bottom" id="mVU-pJ-uha"/>
+                            <constraint firstItem="Hki-6w-UzN" firstAttribute="leading" secondItem="ajQ-T5-hpV" secondAttribute="leading" id="pjG-oh-zil"/>
+                            <constraint firstItem="Xf3-Xn-7d6" firstAttribute="leading" secondItem="Syd-fj-lIe" secondAttribute="leading" id="uWl-Xk-KKd"/>
+                            <constraint firstItem="hnk-FE-h3n" firstAttribute="top" secondItem="Syd-fj-lIe" secondAttribute="top" id="xgq-bi-QZs"/>
+                            <constraint firstItem="Syd-fj-lIe" firstAttribute="trailing" secondItem="Xf3-Xn-7d6" secondAttribute="trailing" id="ydG-At-EgO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adonNoTextField" destination="UPI-aQ-skr" id="NSA-CV-a75"/>
+                        <outlet property="backgroundImageView" destination="Hki-6w-UzN" id="dcB-uS-GUu"/>
+                        <outlet property="companyDetailHeightConstraint" destination="t93-1O-ZDx" id="dXm-Z2-0Ym"/>
+                        <outlet property="companyIDNumberTextField" destination="sHZ-gd-Svc" id="GIz-43-nTa"/>
+                        <outlet property="companyNameTextField" destination="UFp-5R-6YW" id="UiE-rf-nUR"/>
+                        <outlet property="emailAddressTextField" destination="j6Q-ZQ-lL0" id="a35-WO-Xpr"/>
+                        <outlet property="enterPasswordTextField" destination="eVr-xC-KA0" id="Anr-nI-6JO"/>
+                        <outlet property="firstNameTextField" destination="60F-Bn-9k9" id="DC2-0I-c8A"/>
+                        <outlet property="houseNoTextField" destination="txp-Gp-j9P" id="1Z9-49-aN1"/>
+                        <outlet property="iAmCompanyButton" destination="WlU-3q-zZF" id="piu-gg-ZNN"/>
+                        <outlet property="lastNameTextField" destination="Gf0-7F-VQw" id="Lo5-IW-mBw"/>
+                        <outlet property="mobileNumberTextField" destination="jWR-LF-AOT" id="e78-4h-L2S"/>
+                        <outlet property="postalCodeTextField" destination="CJ6-Hx-Etl" id="mmP-sX-Ew5"/>
+                        <outlet property="privacyPolicyButton" destination="wY9-Ny-bR9" id="r1P-qe-qdj"/>
+                        <outlet property="registerButton" destination="TR6-QN-nAo" id="7om-fS-EHa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q20-iO-O75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3782" y="156"/>
+        </scene>
+        <!--Complete Registration View Controller-->
+        <scene sceneID="alo-F6-WyA">
+            <objects>
+                <viewController storyboardIdentifier="CompleteRegistrationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N8U-Br-6Ab" customClass="CompleteRegistrationViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jvu-s4-x5P">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-mM-WY6">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTA-Ll-gqz">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                        <connections>
+                                            <action selector="didTapOnButtonClose:" destination="N8U-Br-6Ab" eventType="touchUpInside" id="OBc-R0-BT9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eTA-Ll-gqz" firstAttribute="top" secondItem="bfB-mM-WY6" secondAttribute="top" id="0wA-g9-5ED"/>
+                                    <constraint firstAttribute="trailing" secondItem="eTA-Ll-gqz" secondAttribute="trailing" id="BBS-31-N1B"/>
+                                    <constraint firstItem="eTA-Ll-gqz" firstAttribute="leading" secondItem="bfB-mM-WY6" secondAttribute="leading" id="Uav-lk-rZ9"/>
+                                    <constraint firstAttribute="bottom" secondItem="eTA-Ll-gqz" secondAttribute="bottom" id="zNf-ep-u8d"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bq-hc-IEa">
+                                <rect key="frame" x="1" y="465" width="426" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Yn-Vc-78z">
+                                        <rect key="frame" x="193" y="15" width="40" height="5"/>
+                                        <color key="backgroundColor" name="App Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="6Zm-Mp-jsy"/>
+                                            <constraint firstAttribute="width" constant="40" id="cSP-fJ-0wY"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                <real key="value" value="2.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVC-Sv-jHa">
+                                        <rect key="frame" x="0.0" y="0.0" width="426" height="60"/>
+                                        <connections>
+                                            <action selector="didTapOnButtonClose:" destination="N8U-Br-6Ab" eventType="touchUpInside" id="n3D-hT-f2P"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your Registration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sA1-gp-GLz" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="60" width="366" height="24"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="24"/>
+                                        <color key="textColor" name="App Purple"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are in queue. Wait until administrator confirm your registration" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="bzN-l1-2Qk" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="92" width="366" height="36"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
+                                        <color key="textColor" red="0.55294883250000004" green="0.5529272556" blue="0.55294191839999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting List Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8O1-pq-3aO" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="168" width="366" height="24"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="24"/>
+                                        <color key="textColor" name="App Purple"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prL-vf-9R5">
+                                        <rect key="frame" x="30" y="200" width="366" height="24"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="24"/>
+                                        <color key="textColor" name="App Orange"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you a message as soon as you can order" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="N7A-LY-VzQ" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="254" width="366" height="36"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
+                                        <color key="textColor" red="0.55294883250000004" green="0.5529272556" blue="0.55294191839999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3Wc-1N-aLz" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="310" width="425" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="UdO-mw-qsU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="45" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Contact us if you need help" image="emailBlack">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapOnButtonContactUsIfYouNeedHelp:" destination="N8U-Br-6Ab" eventType="touchUpInside" id="Vgw-gi-DR1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zUL-el-6D7" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="380" width="426" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="lkh-W2-Jwg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="-35" maxX="25" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="50" minY="15" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Close" image="bottomArrow">
+                                            <color key="titleColor" red="0.5411840081" green="0.54116284849999996" blue="0.54117721320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapOnButtonClose:" destination="N8U-Br-6Ab" eventType="touchUpInside" id="Dfy-qn-XFV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3Wc-1N-aLz" firstAttribute="top" secondItem="N7A-LY-VzQ" secondAttribute="bottom" constant="20" id="8Vt-28-MTS"/>
+                                    <constraint firstAttribute="trailing" secondItem="FVC-Sv-jHa" secondAttribute="trailing" id="8rE-g3-B3Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="8O1-pq-3aO" secondAttribute="trailing" constant="30" id="9jX-vo-9AZ"/>
+                                    <constraint firstItem="4Yn-Vc-78z" firstAttribute="top" secondItem="3bq-hc-IEa" secondAttribute="top" constant="15" id="HFQ-p0-82O"/>
+                                    <constraint firstItem="4Yn-Vc-78z" firstAttribute="centerX" secondItem="3bq-hc-IEa" secondAttribute="centerX" id="KUs-Iu-srM"/>
+                                    <constraint firstItem="sA1-gp-GLz" firstAttribute="top" secondItem="FVC-Sv-jHa" secondAttribute="bottom" id="Lie-xx-BSd"/>
+                                    <constraint firstAttribute="trailing" secondItem="N7A-LY-VzQ" secondAttribute="trailing" constant="30" id="Mnb-dg-zgW"/>
+                                    <constraint firstItem="FVC-Sv-jHa" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" id="P62-hG-Niu"/>
+                                    <constraint firstItem="zUL-el-6D7" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" id="P6y-eJ-xnO"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Wc-1N-aLz" secondAttribute="trailing" id="PG4-tJ-VaD"/>
+                                    <constraint firstItem="bzN-l1-2Qk" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" constant="30" id="SS0-Ew-6Dj"/>
+                                    <constraint firstAttribute="trailing" secondItem="prL-vf-9R5" secondAttribute="trailing" constant="30" id="XFf-bT-lOW"/>
+                                    <constraint firstItem="N7A-LY-VzQ" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" constant="30" id="YXU-hq-Bxn"/>
+                                    <constraint firstItem="zUL-el-6D7" firstAttribute="top" secondItem="3Wc-1N-aLz" secondAttribute="bottom" id="Zvh-4h-BYE"/>
+                                    <constraint firstAttribute="trailing" secondItem="zUL-el-6D7" secondAttribute="trailing" id="abh-Lh-dB4"/>
+                                    <constraint firstItem="prL-vf-9R5" firstAttribute="top" secondItem="8O1-pq-3aO" secondAttribute="bottom" constant="8" id="amT-yH-rXf"/>
+                                    <constraint firstAttribute="trailing" secondItem="bzN-l1-2Qk" secondAttribute="trailing" constant="30" id="eR7-dD-yWc"/>
+                                    <constraint firstItem="N7A-LY-VzQ" firstAttribute="top" secondItem="prL-vf-9R5" secondAttribute="bottom" constant="30" id="f6Y-M6-OoN"/>
+                                    <constraint firstItem="8O1-pq-3aO" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" constant="30" id="flr-m0-bXB"/>
+                                    <constraint firstItem="bzN-l1-2Qk" firstAttribute="top" secondItem="sA1-gp-GLz" secondAttribute="bottom" constant="8" id="mQh-Um-sUj"/>
+                                    <constraint firstItem="sA1-gp-GLz" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" constant="30" id="n17-Iz-XWF"/>
+                                    <constraint firstItem="sA1-gp-GLz" firstAttribute="top" secondItem="4Yn-Vc-78z" secondAttribute="bottom" constant="40" id="pSH-cv-SBT"/>
+                                    <constraint firstItem="3Wc-1N-aLz" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" constant="1" id="rLj-Du-I7t"/>
+                                    <constraint firstItem="FVC-Sv-jHa" firstAttribute="top" secondItem="3bq-hc-IEa" secondAttribute="top" id="tkH-eB-fiX"/>
+                                    <constraint firstItem="prL-vf-9R5" firstAttribute="leading" secondItem="3bq-hc-IEa" secondAttribute="leading" constant="30" id="uXh-UE-o9D"/>
+                                    <constraint firstItem="8O1-pq-3aO" firstAttribute="top" secondItem="bzN-l1-2Qk" secondAttribute="bottom" constant="40" id="un2-xy-e9w"/>
+                                    <constraint firstAttribute="trailing" secondItem="sA1-gp-GLz" secondAttribute="trailing" constant="30" id="vx7-gD-MZl"/>
+                                    <constraint firstAttribute="bottom" secondItem="zUL-el-6D7" secondAttribute="bottom" id="yYR-pd-R1B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pvF-IL-NuU"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3bq-hc-IEa" secondAttribute="trailing" constant="1" id="5bi-qD-fHq"/>
+                            <constraint firstAttribute="bottom" secondItem="3bq-hc-IEa" secondAttribute="bottom" constant="1" id="8py-B5-Bey"/>
+                            <constraint firstItem="3bq-hc-IEa" firstAttribute="leading" secondItem="jvu-s4-x5P" secondAttribute="leading" constant="1" id="aCP-VT-QNM"/>
+                            <constraint firstAttribute="bottom" secondItem="bfB-mM-WY6" secondAttribute="bottom" id="iOn-Q7-ONl"/>
+                            <constraint firstItem="bfB-mM-WY6" firstAttribute="top" secondItem="jvu-s4-x5P" secondAttribute="top" id="n8s-iO-Q4e"/>
+                            <constraint firstAttribute="trailing" secondItem="bfB-mM-WY6" secondAttribute="trailing" id="t4g-fp-Utg"/>
+                            <constraint firstItem="bfB-mM-WY6" firstAttribute="leading" secondItem="jvu-s4-x5P" secondAttribute="leading" id="tys-uy-Zca"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="zUL-el-6D7" id="BwY-92-kIP"/>
+                        <outlet property="confirmationMessageLabel" destination="N7A-LY-VzQ" id="DPR-zb-F9S"/>
+                        <outlet property="contactUsIfYouNeedHelpButton" destination="3Wc-1N-aLz" id="622-43-mp9"/>
+                        <outlet property="registrationCompleteView" destination="3bq-hc-IEa" id="M2m-MY-Tkk"/>
+                        <outlet property="tanksTitleLabel" destination="sA1-gp-GLz" id="eYY-35-i5l"/>
+                        <outlet property="thanksDescriptionLabel" destination="bzN-l1-2Qk" id="KMK-af-krm"/>
+                        <outlet property="waitingListCountLabel" destination="prL-vf-9R5" id="fkq-pF-AId"/>
+                        <outlet property="waitingListTitleLabel" destination="8O1-pq-3aO" id="9JG-fa-PXz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofG-0C-O4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4548" y="156"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="G5Q-Ri-6co">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Dwq-SU-f1M" customClass="ForgotPasswordViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Wd-jk-QCz">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzR-he-hy0" customClass="NavigationColorView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
+                                <color key="backgroundColor" name="App Purple"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1S-vX-NTd" customClass="NavigationColorView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="428" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkD-K0-J1h">
+                                        <rect key="frame" x="10" y="0.0" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5k0-Ls-cEI"/>
+                                            <constraint firstAttribute="width" constant="60" id="i5Q-Y0-pkg"/>
+                                        </constraints>
+                                        <state key="normal" image="backArrow"/>
+                                        <connections>
+                                            <action selector="didTapOnButtonBack:" destination="Dwq-SU-f1M" eventType="touchUpInside" id="ciE-Zj-O9F"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need Help?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlh-tk-BiQ" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="0.0" width="338" height="50"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="App Purple"/>
+                                <constraints>
+                                    <constraint firstItem="Dlh-tk-BiQ" firstAttribute="leading" secondItem="pkD-K0-J1h" secondAttribute="trailing" constant="10" id="7QA-hH-ohG"/>
+                                    <constraint firstItem="pkD-K0-J1h" firstAttribute="top" secondItem="v1S-vX-NTd" secondAttribute="top" id="c0z-rj-Z2r"/>
+                                    <constraint firstItem="pkD-K0-J1h" firstAttribute="leading" secondItem="v1S-vX-NTd" secondAttribute="leading" constant="10" id="cwx-1S-8KE"/>
+                                    <constraint firstItem="Dlh-tk-BiQ" firstAttribute="top" secondItem="v1S-vX-NTd" secondAttribute="top" id="dPT-A5-VMQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="pkD-K0-J1h" secondAttribute="bottom" id="fke-f4-JeZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dlh-tk-BiQ" secondAttribute="bottom" id="uMK-Wk-ekJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dlh-tk-BiQ" secondAttribute="trailing" constant="10" id="wEn-zN-eX7"/>
+                                    <constraint firstAttribute="height" constant="50" id="wvQ-oY-bum"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkt-Qf-w6o" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="114" width="388" height="20"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                <color key="textColor" name="App Purple"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you recovery link to your registered email address to reset password." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzN-Yy-XMG" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="139" width="388" height="36"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <color key="textColor" red="0.57640761139999996" green="0.58041805030000004" blue="0.57647436860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Email Address" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xc1-vW-bEI" customClass="LocalizeTextField" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="215" width="388" height="50"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BZr-0K-Bsc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="send" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomLineColor">
+                                        <color key="value" red="0.71765685079999997" green="0.71762943270000001" blue="0.71764808889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Dwq-SU-f1M" id="c7b-kK-6Sw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnb-Qb-TPp" customClass="SpinnerButton" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="285" width="388" height="60"/>
+                                <color key="backgroundColor" name="App Purple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XvP-g2-JXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapOnButtonSend:" destination="Dwq-SU-f1M" eventType="touchUpInside" id="T6O-up-pbV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N5a-on-d8t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xc1-vW-bEI" firstAttribute="top" secondItem="ZzN-Yy-XMG" secondAttribute="bottom" constant="40" id="2d1-pU-9gN"/>
+                            <constraint firstItem="N5a-on-d8t" firstAttribute="trailing" secondItem="Rkt-Qf-w6o" secondAttribute="trailing" constant="20" id="4Ks-ko-vmI"/>
+                            <constraint firstItem="xc1-vW-bEI" firstAttribute="leading" secondItem="9Wd-jk-QCz" secondAttribute="leading" constant="20" id="4Np-bF-iMX"/>
+                            <constraint firstItem="wzR-he-hy0" firstAttribute="top" secondItem="9Wd-jk-QCz" secondAttribute="top" id="5Ki-Vh-jJX"/>
+                            <constraint firstItem="ZzN-Yy-XMG" firstAttribute="leading" secondItem="N5a-on-d8t" secondAttribute="leading" constant="20" id="BC8-Un-cEx"/>
+                            <constraint firstItem="v1S-vX-NTd" firstAttribute="top" secondItem="N5a-on-d8t" secondAttribute="top" id="Bb8-ZQ-c6G"/>
+                            <constraint firstItem="wzR-he-hy0" firstAttribute="leading" secondItem="9Wd-jk-QCz" secondAttribute="leading" id="CkC-Ha-nvJ"/>
+                            <constraint firstItem="vnb-Qb-TPp" firstAttribute="top" secondItem="xc1-vW-bEI" secondAttribute="bottom" constant="20" id="ESi-Kn-Plw"/>
+                            <constraint firstItem="vnb-Qb-TPp" firstAttribute="leading" secondItem="9Wd-jk-QCz" secondAttribute="leading" constant="20" id="J4x-Ba-idZ"/>
+                            <constraint firstItem="v1S-vX-NTd" firstAttribute="top" secondItem="wzR-he-hy0" secondAttribute="bottom" id="V4x-mW-IQ7"/>
+                            <constraint firstItem="v1S-vX-NTd" firstAttribute="leading" secondItem="N5a-on-d8t" secondAttribute="leading" id="cHV-6Q-cZP"/>
+                            <constraint firstItem="N5a-on-d8t" firstAttribute="trailing" secondItem="vnb-Qb-TPp" secondAttribute="trailing" constant="20" id="cZ7-lB-psT"/>
+                            <constraint firstItem="Rkt-Qf-w6o" firstAttribute="leading" secondItem="N5a-on-d8t" secondAttribute="leading" constant="20" id="f0d-Jb-NGZ"/>
+                            <constraint firstItem="N5a-on-d8t" firstAttribute="trailing" secondItem="xc1-vW-bEI" secondAttribute="trailing" constant="20" id="m8k-Yr-jxl"/>
+                            <constraint firstItem="ZzN-Yy-XMG" firstAttribute="top" secondItem="Rkt-Qf-w6o" secondAttribute="bottom" constant="5" id="oJC-UO-Qwx"/>
+                            <constraint firstItem="N5a-on-d8t" firstAttribute="trailing" secondItem="v1S-vX-NTd" secondAttribute="trailing" id="tZq-kL-EaD"/>
+                            <constraint firstAttribute="trailing" secondItem="wzR-he-hy0" secondAttribute="trailing" id="uGJ-v6-MVG"/>
+                            <constraint firstItem="Rkt-Qf-w6o" firstAttribute="top" secondItem="v1S-vX-NTd" secondAttribute="bottom" constant="20" id="v0o-DT-MWn"/>
+                            <constraint firstItem="N5a-on-d8t" firstAttribute="trailing" secondItem="ZzN-Yy-XMG" secondAttribute="trailing" constant="20" id="wA9-I2-ZVv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="xc1-vW-bEI" id="dcV-Lq-Suy"/>
+                        <outlet property="forgotPasswordDescriptionLabel" destination="ZzN-Yy-XMG" id="dLc-tm-mJc"/>
+                        <outlet property="forgotPasswordTitleLabel" destination="Rkt-Qf-w6o" id="Wk1-P3-rbs"/>
+                        <outlet property="navigationTitleLabel" destination="Dlh-tk-BiQ" id="Qft-Z0-5bW"/>
+                        <outlet property="sendButton" destination="vnb-Qb-TPp" id="Oap-7I-uHm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNi-2s-6Ea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5289" y="156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NNz-ek-Ffm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rnm-p4-lq8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7wK-dL-zCY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DuQ-8m-Zns" kind="relationship" relationship="rootViewController" id="qcW-dA-xaZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDz-hZ-9dD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471.01449275362324" y="157.36607142857142"/>
+        </scene>
+        <!--Introduction View Controller-->
+        <scene sceneID="KYs-fx-4fB">
+            <objects>
+                <viewController storyboardIdentifier="IntroductionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LPY-P2-Vff" customClass="IntroductionViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sPp-nC-GTO">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOT-aM-5Yw" customClass="NavigationColorView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
+                                <color key="backgroundColor" name="App Purple"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-Jm-iBR" customClass="NavigationColorView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="428" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKp-ZQ-SCr">
+                                        <rect key="frame" x="10" y="0.0" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="T7G-0u-c7e"/>
+                                            <constraint firstAttribute="width" constant="60" id="efi-0R-jJC"/>
+                                        </constraints>
+                                        <state key="normal" image="backArrow"/>
+                                        <connections>
+                                            <action selector="didTapOnButtonback:" destination="LPY-P2-Vff" eventType="touchUpInside" id="SPH-8k-cip"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqw-6U-PJV" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="0.0" width="338" height="50"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="App Purple"/>
+                                <constraints>
+                                    <constraint firstItem="yKp-ZQ-SCr" firstAttribute="leading" secondItem="eXV-Jm-iBR" secondAttribute="leading" constant="10" id="075-pE-jMB"/>
+                                    <constraint firstAttribute="bottom" secondItem="mqw-6U-PJV" secondAttribute="bottom" id="ATI-dA-I6W"/>
+                                    <constraint firstItem="mqw-6U-PJV" firstAttribute="top" secondItem="eXV-Jm-iBR" secondAttribute="top" id="GCs-1f-ef4"/>
+                                    <constraint firstAttribute="trailing" secondItem="mqw-6U-PJV" secondAttribute="trailing" constant="10" id="LAT-X5-IXN"/>
+                                    <constraint firstAttribute="bottom" secondItem="yKp-ZQ-SCr" secondAttribute="bottom" id="Tvc-0X-Iy9"/>
+                                    <constraint firstItem="yKp-ZQ-SCr" firstAttribute="top" secondItem="eXV-Jm-iBR" secondAttribute="top" id="jbi-Fb-6Pc"/>
+                                    <constraint firstAttribute="height" constant="50" id="nzV-oy-Dzh"/>
+                                    <constraint firstItem="mqw-6U-PJV" firstAttribute="leading" secondItem="yKp-ZQ-SCr" secondAttribute="trailing" constant="10" id="vMC-hz-i9C"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPU-a4-5QI">
+                                <rect key="frame" x="0.0" y="94" width="428" height="832"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZB1-xE-o79">
+                                <rect key="frame" x="195.66666666666666" y="491.66666666666669" width="37" height="37.000000000000057"/>
+                                <color key="color" name="App Purple"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pxu-PF-Ptr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eXV-Jm-iBR" firstAttribute="top" secondItem="pxu-PF-Ptr" secondAttribute="top" id="1lw-xU-Rw6"/>
+                            <constraint firstItem="FPU-a4-5QI" firstAttribute="leading" secondItem="pxu-PF-Ptr" secondAttribute="leading" id="2py-X5-HQf"/>
+                            <constraint firstItem="eXV-Jm-iBR" firstAttribute="top" secondItem="mOT-aM-5Yw" secondAttribute="bottom" id="48C-c4-cZi"/>
+                            <constraint firstItem="pxu-PF-Ptr" firstAttribute="trailing" secondItem="eXV-Jm-iBR" secondAttribute="trailing" id="7eF-1c-Kc1"/>
+                            <constraint firstItem="mOT-aM-5Yw" firstAttribute="leading" secondItem="sPp-nC-GTO" secondAttribute="leading" id="KYl-Ef-KaK"/>
+                            <constraint firstItem="FPU-a4-5QI" firstAttribute="top" secondItem="eXV-Jm-iBR" secondAttribute="bottom" id="Kwm-hY-zNe"/>
+                            <constraint firstItem="ZB1-xE-o79" firstAttribute="centerX" secondItem="FPU-a4-5QI" secondAttribute="centerX" id="NKu-Q9-3pz"/>
+                            <constraint firstItem="ZB1-xE-o79" firstAttribute="centerY" secondItem="FPU-a4-5QI" secondAttribute="centerY" id="ZCM-D1-fUq"/>
+                            <constraint firstAttribute="trailing" secondItem="mOT-aM-5Yw" secondAttribute="trailing" id="dJp-Sy-Wsf"/>
+                            <constraint firstItem="eXV-Jm-iBR" firstAttribute="leading" secondItem="pxu-PF-Ptr" secondAttribute="leading" id="eF1-O0-bAB"/>
+                            <constraint firstAttribute="bottom" secondItem="FPU-a4-5QI" secondAttribute="bottom" id="prI-4M-bc7"/>
+                            <constraint firstItem="mOT-aM-5Yw" firstAttribute="top" secondItem="sPp-nC-GTO" secondAttribute="top" id="x9V-xo-hWY"/>
+                            <constraint firstItem="pxu-PF-Ptr" firstAttribute="trailing" secondItem="FPU-a4-5QI" secondAttribute="trailing" id="xJX-g0-g0R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="introductionWebView" destination="FPU-a4-5QI" id="10N-Iq-ceh"/>
+                        <outlet property="navigationBarTitleLabel" destination="mqw-6U-PJV" id="S2W-e2-FhD"/>
+                        <outlet property="webViewActivityIndicator" destination="ZB1-xE-o79" id="dBm-tT-htj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMe-TJ-2d3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6086" y="156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CcO-XO-7C2">
+            <objects>
+                <viewController storyboardIdentifier="OTPViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fch-nL-eQc" customClass="OTPViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZd-dQ-ppG">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8n-fj-rMt" customClass="NavigationColorView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
+                                <color key="backgroundColor" name="App Purple"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3VW-7k-bu8" customClass="NavigationColorView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="428" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLH-bF-WkI">
+                                        <rect key="frame" x="10" y="0.0" width="60" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ngC-4c-Ky1"/>
+                                            <constraint firstAttribute="height" constant="50" id="qUE-M8-cPk"/>
+                                        </constraints>
+                                        <state key="normal" image="backArrow"/>
+                                        <connections>
+                                            <action selector="didTapOnButtonBack:" destination="fch-nL-eQc" eventType="touchUpInside" id="F9S-UN-5sQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilv-Ag-yR0" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="0.0" width="338" height="50"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="App Purple"/>
+                                <constraints>
+                                    <constraint firstItem="Ilv-Ag-yR0" firstAttribute="leading" secondItem="PLH-bF-WkI" secondAttribute="trailing" constant="10" id="875-kQ-pdl"/>
+                                    <constraint firstItem="PLH-bF-WkI" firstAttribute="leading" secondItem="3VW-7k-bu8" secondAttribute="leading" constant="10" id="D45-EL-ixp"/>
+                                    <constraint firstItem="Ilv-Ag-yR0" firstAttribute="top" secondItem="3VW-7k-bu8" secondAttribute="top" id="FwV-fT-0GZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="PLH-bF-WkI" secondAttribute="bottom" id="UD3-Lb-qcx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ilv-Ag-yR0" secondAttribute="trailing" constant="10" id="WSW-ig-r1v"/>
+                                    <constraint firstItem="PLH-bF-WkI" firstAttribute="top" secondItem="3VW-7k-bu8" secondAttribute="top" id="cmw-Qh-qxT"/>
+                                    <constraint firstAttribute="height" constant="50" id="k2I-8Z-ccE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ilv-Ag-yR0" secondAttribute="bottom" id="s8h-5l-cn1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c8-tJ-wJM" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="123.99999999999999" width="388" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please type the verification code sent to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-rR-hdI" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="30" y="167.33333333333334" width="368" height="21"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5D-EV-vcn" customClass="VPMOTPView" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="238.33333333333337" width="388" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kbh-d2-tLk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-3g-VDR" customClass="SpinnerButton" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="348.33333333333331" width="388" height="50"/>
+                                <color key="backgroundColor" name="App Purple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rDg-sP-6ob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapOnButtonVerify:" destination="fch-nL-eQc" eventType="touchUpInside" id="ZCv-kF-sbm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYx-9g-41E" customClass="SpinnerButton" customModule="Seyyar" customModuleProvider="target">
+                                <rect key="frame" x="20" y="418.33333333333331" width="388" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VFg-pM-lJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Re-send">
+                                    <color key="titleColor" name="App Purple"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOnButtonResend:" destination="fch-nL-eQc" eventType="touchUpInside" id="xAb-P7-JCS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wiH-It-E8b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b6c-3g-VDR" firstAttribute="top" secondItem="C5D-EV-vcn" secondAttribute="bottom" constant="30" id="14d-du-rzW"/>
+                            <constraint firstItem="JYx-9g-41E" firstAttribute="leading" secondItem="wiH-It-E8b" secondAttribute="leading" constant="20" id="2TH-Vx-gjo"/>
+                            <constraint firstItem="wiH-It-E8b" firstAttribute="trailing" secondItem="qBu-rR-hdI" secondAttribute="trailing" constant="30" id="6ZT-Ea-ffO"/>
+                            <constraint firstItem="C5D-EV-vcn" firstAttribute="top" secondItem="qBu-rR-hdI" secondAttribute="bottom" constant="50" id="6j0-n2-g37"/>
+                            <constraint firstItem="c8n-fj-rMt" firstAttribute="leading" secondItem="hZd-dQ-ppG" secondAttribute="leading" id="6ne-dL-c2G"/>
+                            <constraint firstItem="JYx-9g-41E" firstAttribute="top" secondItem="b6c-3g-VDR" secondAttribute="bottom" constant="20" id="ANV-2Q-iyt"/>
+                            <constraint firstItem="1c8-tJ-wJM" firstAttribute="top" secondItem="3VW-7k-bu8" secondAttribute="bottom" constant="30" id="AaW-RK-xd5"/>
+                            <constraint firstAttribute="trailing" secondItem="c8n-fj-rMt" secondAttribute="trailing" id="DC3-Un-XqN"/>
+                            <constraint firstItem="3VW-7k-bu8" firstAttribute="top" secondItem="c8n-fj-rMt" secondAttribute="bottom" id="DdF-88-0Wv"/>
+                            <constraint firstItem="wiH-It-E8b" firstAttribute="trailing" secondItem="JYx-9g-41E" secondAttribute="trailing" constant="20" id="ExO-rM-leu"/>
+                            <constraint firstItem="wiH-It-E8b" firstAttribute="trailing" secondItem="3VW-7k-bu8" secondAttribute="trailing" id="IUh-A6-HbC"/>
+                            <constraint firstItem="b6c-3g-VDR" firstAttribute="leading" secondItem="wiH-It-E8b" secondAttribute="leading" constant="20" id="LD6-gz-Ykj"/>
+                            <constraint firstItem="qBu-rR-hdI" firstAttribute="top" secondItem="1c8-tJ-wJM" secondAttribute="bottom" constant="20" id="ZOB-dM-ISa"/>
+                            <constraint firstItem="c8n-fj-rMt" firstAttribute="top" secondItem="hZd-dQ-ppG" secondAttribute="top" id="aLa-0n-w7R"/>
+                            <constraint firstItem="wiH-It-E8b" firstAttribute="trailing" secondItem="1c8-tJ-wJM" secondAttribute="trailing" constant="20" id="dk7-no-JqI"/>
+                            <constraint firstItem="3VW-7k-bu8" firstAttribute="top" secondItem="wiH-It-E8b" secondAttribute="top" id="fz4-id-lVy"/>
+                            <constraint firstItem="wiH-It-E8b" firstAttribute="trailing" secondItem="b6c-3g-VDR" secondAttribute="trailing" constant="20" id="hPY-T0-fMl"/>
+                            <constraint firstItem="C5D-EV-vcn" firstAttribute="leading" secondItem="wiH-It-E8b" secondAttribute="leading" constant="20" id="hxG-Rb-nNe"/>
+                            <constraint firstItem="wiH-It-E8b" firstAttribute="trailing" secondItem="C5D-EV-vcn" secondAttribute="trailing" constant="20" id="nj9-bg-FKE"/>
+                            <constraint firstItem="qBu-rR-hdI" firstAttribute="leading" secondItem="wiH-It-E8b" secondAttribute="leading" constant="30" id="q0g-gq-Bs0"/>
+                            <constraint firstItem="3VW-7k-bu8" firstAttribute="leading" secondItem="wiH-It-E8b" secondAttribute="leading" id="rmr-bE-tjk"/>
+                            <constraint firstItem="1c8-tJ-wJM" firstAttribute="leading" secondItem="wiH-It-E8b" secondAttribute="leading" constant="20" id="rui-mp-5bj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OTPView" destination="C5D-EV-vcn" id="uRh-uR-lMh"/>
+                        <outlet property="navigationTitleLabel" destination="Ilv-Ag-yR0" id="fQv-Xt-Dw1"/>
+                        <outlet property="resendButton" destination="JYx-9g-41E" id="UUH-Hn-eid"/>
+                        <outlet property="verificationDescriptionLabel" destination="qBu-rR-hdI" id="HbA-m5-lZw"/>
+                        <outlet property="verificationTitleLabel" destination="1c8-tJ-wJM" id="VFF-Yn-BB2"/>
+                        <outlet property="verifyButton" destination="b6c-3g-VDR" id="DPI-vH-iXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkb-H6-gSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6915" y="156"/>
+        </scene>
+        <!--Choose Language View Controller-->
+        <scene sceneID="Xs1-Qy-g5S">
+            <objects>
+                <viewController storyboardIdentifier="ChooseLanguageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ErN-5T-T8J" customClass="ChooseLanguageViewController" customModule="Seyyar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4qH-82-oNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haY-Rj-e48">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5U-0b-7Hm">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="526"/>
+                                        <connections>
+                                            <action selector="didTapOnButtonClose:" destination="ErN-5T-T8J" eventType="touchUpInside" id="fhZ-dC-Rnn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="X5U-0b-7Hm" secondAttribute="trailing" id="ONx-8x-S4P"/>
+                                    <constraint firstItem="X5U-0b-7Hm" firstAttribute="top" secondItem="haY-Rj-e48" secondAttribute="top" id="RwM-di-b92"/>
+                                    <constraint firstAttribute="bottom" secondItem="X5U-0b-7Hm" secondAttribute="bottom" constant="400" id="YPi-Y1-dR1"/>
+                                    <constraint firstItem="X5U-0b-7Hm" firstAttribute="leading" secondItem="haY-Rj-e48" secondAttribute="leading" id="nWu-lu-7kS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3i-nZ-Tvx">
+                                <rect key="frame" x="1" y="524" width="426" height="401"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZ4-vk-Ned">
+                                        <rect key="frame" x="193" y="15" width="40" height="5"/>
+                                        <color key="backgroundColor" name="App Orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="5pi-lh-oC4"/>
+                                            <constraint firstAttribute="width" constant="40" id="rmk-Pq-Bva"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                <real key="value" value="2.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-vO-UsT">
+                                        <rect key="frame" x="0.0" y="0.0" width="426" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eWv-hA-b1M"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="didTapOnButtonClose:" destination="ErN-5T-T8J" eventType="touchUpInside" id="Htb-mP-gkj"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqe-Y1-Gjc">
+                                        <rect key="frame" x="0.0" y="50" width="426" height="317"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uM5-Oz-LYR">
+                                                <rect key="frame" x="20" y="20" width="386" height="277"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Langage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdD-HJ-Fx2" customClass="LocalizableLabel" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="386" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="17"/>
+                                                        <color key="textColor" name="App Purple"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91K-1u-hqB" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="32" width="386" height="50"/>
+                                                        <color key="backgroundColor" red="0.84705882349999995" green="0.043137254899999998" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="s9m-yy-Liv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="English">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="didTapOnButtonLanguage:" destination="ErN-5T-T8J" eventType="touchUpInside" id="FoT-pU-Fr9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh5-sc-ngP" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="97" width="386" height="50"/>
+                                                        <color key="backgroundColor" red="0.84705882349999995" green="0.043137254899999998" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="LLs-qn-yWT"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Swedish">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="didTapOnButtonLanguage:" destination="ErN-5T-T8J" eventType="touchUpInside" id="Pnm-u9-KwG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odx-jT-GUp" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="162" width="386" height="50"/>
+                                                        <color key="backgroundColor" red="0.84705882349999995" green="0.043137254899999998" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="beU-cM-IpZ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Arabic">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="didTapOnButtonLanguage:" destination="ErN-5T-T8J" eventType="touchUpInside" id="wtD-U5-hRN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8u-LI-yh9" customClass="LocalizeButton" customModule="Seyyar" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="227" width="386" height="50"/>
+                                                        <color key="backgroundColor" red="0.84705882349999995" green="0.043137254899999998" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="8fu-yQ-8hs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal" pointSize="15"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Turkish">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fixRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="didTapOnButtonLanguage:" destination="ErN-5T-T8J" eventType="touchUpInside" id="Zs4-to-898"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="uM5-Oz-LYR" firstAttribute="leading" secondItem="Mqe-Y1-Gjc" secondAttribute="leading" constant="20" id="Vad-A6-XVE"/>
+                                            <constraint firstItem="uM5-Oz-LYR" firstAttribute="top" secondItem="Mqe-Y1-Gjc" secondAttribute="top" constant="20" id="gbV-R3-lRM"/>
+                                            <constraint firstAttribute="bottom" secondItem="uM5-Oz-LYR" secondAttribute="bottom" constant="20" id="gmW-7A-Aox"/>
+                                            <constraint firstAttribute="trailing" secondItem="uM5-Oz-LYR" secondAttribute="trailing" constant="20" id="mjh-De-tj6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0fx-vO-UsT" secondAttribute="trailing" id="3Ec-pL-sTL"/>
+                                    <constraint firstItem="0fx-vO-UsT" firstAttribute="leading" secondItem="S3i-nZ-Tvx" secondAttribute="leading" id="J0t-bf-xlf"/>
+                                    <constraint firstItem="Mqe-Y1-Gjc" firstAttribute="leading" secondItem="S3i-nZ-Tvx" secondAttribute="leading" id="NcV-EH-SxJ"/>
+                                    <constraint firstItem="Mqe-Y1-Gjc" firstAttribute="top" secondItem="0fx-vO-UsT" secondAttribute="bottom" id="Nqv-6D-vLh"/>
+                                    <constraint firstItem="0fx-vO-UsT" firstAttribute="top" secondItem="S3i-nZ-Tvx" secondAttribute="top" id="Sa2-V8-xjX"/>
+                                    <constraint firstItem="IZ4-vk-Ned" firstAttribute="centerX" secondItem="S3i-nZ-Tvx" secondAttribute="centerX" id="civ-iA-lE1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mqe-Y1-Gjc" secondAttribute="bottom" constant="34" id="eic-59-ajI"/>
+                                    <constraint firstItem="IZ4-vk-Ned" firstAttribute="top" secondItem="S3i-nZ-Tvx" secondAttribute="top" constant="15" id="gS5-Ld-YXq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mqe-Y1-Gjc" secondAttribute="trailing" id="ouT-Tn-XzP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sag-cO-il0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="S3i-nZ-Tvx" secondAttribute="bottom" constant="1" id="Ayj-EK-aX7"/>
+                            <constraint firstItem="S3i-nZ-Tvx" firstAttribute="leading" secondItem="4qH-82-oNJ" secondAttribute="leading" constant="1" id="PPa-F1-DcU"/>
+                            <constraint firstAttribute="bottom" secondItem="haY-Rj-e48" secondAttribute="bottom" id="S8C-EV-ddq"/>
+                            <constraint firstItem="haY-Rj-e48" firstAttribute="leading" secondItem="4qH-82-oNJ" secondAttribute="leading" id="V7K-UL-10C"/>
+                            <constraint firstAttribute="trailing" secondItem="S3i-nZ-Tvx" secondAttribute="trailing" constant="1" id="i94-W5-m6f"/>
+                            <constraint firstItem="haY-Rj-e48" firstAttribute="top" secondItem="4qH-82-oNJ" secondAttribute="top" id="k5T-hI-Peb"/>
+                            <constraint firstAttribute="trailing" secondItem="haY-Rj-e48" secondAttribute="trailing" id="vea-5Q-Xb5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="presentView" destination="S3i-nZ-Tvx" id="Rrf-rv-Was"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WH4-Xb-1zY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223" y="156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backArrow" width="20" height="20"/>
+        <image name="bottomArrow" width="30" height="30"/>
+        <image name="checkboxSelected" width="25" height="25"/>
+        <image name="checkboxUnselected" width="30" height="30"/>
+        <image name="downArrowBlue" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="emailBlack" width="46" height="46"/>
+        <image name="eyeClose" width="20" height="20"/>
+        <image name="eyeOpen" width="20" height="20"/>
+        <image name="info" width="20" height="20"/>
+        <namedColor name="App Orange">
+            <color red="0.80000000000000004" green="0.5607843137254902" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="App Purple">
+            <color red="0.027450980392156862" green="0.24313725490196078" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundPurple">
+            <color red="0.94509803921568625" green="0.91764705882352937" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
